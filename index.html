@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Justin Rodriguez Montoya">
+    <meta name="description" content="Opzoek naar een super leuke opleiding? Dan zit je op de goede plek! Schrijf je hier in voor de opleiding mediadeveloper.">
+    <meta name="keywords" content="mediadeveloper, opleiding, mediacollege, school, developer, html, css, javascript, debuggen, media">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>MA: Mediadeveloper</title>
+    <link rel="shortcut icon" href="img/fav.ico">
+  </head>
+  <body>
+    <input type="button" name="inschrijven" value="INSCHRIJVEN" id="inschrijven">
+    <script>
+      let button1 = document.getElementById("inschrijven")
+
+      function openWindow() {
+        window.open("inschrijf.html",'_self');
+      }
+
+      button1.addEventListener("click", openWindow);
+    </script>
+
+    <div class="top">
+      <img src="https://www.ma-web.nl/static/vector/Logo_blok.svg" alt="hoofdstie" id="logo">
+
+      <h1>Mediadeveloper</h1>
+      <h2 id="subTitle">Bij het Mediacollege</h2>
+      <input type="button" name="inschrijven" value="Schrijf je direct in!" id="inschrijf">
+      <script>
+        let button2 = document.getElementById("inschrijf")
+
+        function openWindow() {
+          window.open("inschrijf.html",'_self');
+        }
+
+        button2.addEventListener("click", openWindow);
+      </script>
+    </div>
+    <div class="info">
+      <img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/29.Mac-512.png" alt="code">
+      <h2>Waarom Mediacollege</h2>
+      <p>Ma helpt je jouw speciale talent te ontdekken en daar je beroep van te maken. We kennen de bedrijven in en rond Amsterdam en weten wat jouw toekomstige werkgevers belangrijk vinden. Want Ma is een vakschool. Al ruim 100 jaar leiden we studenten zo op dat ze direct aan het werk kunnen. Tijdens je opleiding koppelen we je aan bedrijven. En we laten je samenwerken aan projecten met studenten van andere opleidingen. Bij dit alles begeleiden we je intensief. Want we willen dat alle studenten hun diploma halen.
+      </p>
+    </div>
+    <div class="studentInfo">
+      <div class="student">
+        <img src="https://www.pngkit.com/png/detail/943-9433708_boy-with-laptop-png.png" alt="student" id="student">
+        <h2 id="studentNaam">Ryan</h2>
+        <p id="studentText">
+          Ik ben een voorgaande student van deze opleiding.
+          Ik kijk er met goede herinneringen op terug en heb erg veel van web development
+          geleerd.
+        </p>
+      </div>
+      <div class="student">
+        <img src="https://png.pngitem.com/pimgs/s/140-1403797_lady-contacting-e-gmat-support-on-her-laptop.png" alt="student" id="student">
+        <h2 id="studentNaam">Jolein</h2>
+        <p id="studentText">
+          Top opleiding! Ik raad deze opleiding zeker aan voor als je
+          opzoek bent naar een leuke uitdaging.
+        </p>
+      </div>
+    </div>
+    <div id="photos">
+      <img class="image" src="http://www.ma-web.nl/media/filer_public_thumbnails/filer_public/52/ec/52ec5995-2e8c-4292-9501-014ee166c141/foto_3_project_gotodo.jpg__1200x630_q85_box-0,0,3216,1614_crop_subsampling-2.jpg" alt="">
+      <img class="image" src="http://www.ma-web.nl/media/filer_public_thumbnails/filer_public/15/e5/15e560b3-8d84-47f2-bd7f-6a64d1c34df8/media-_en_gamedeveloper1-_mvdgmediacollege9011.jpg__1200x630_q85_box-0,0,2500,1500_crop_subsampling-2.jpg" alt="">
+    </div>
+
+    <div class="info">
+      <img src="https://icon-library.net/images/more-info-icon/more-info-icon-27.jpg" alt="code">
+      <h2>Opleiding informatie</h2>
+      <p class="leftAlign">Opleiding duur: 4 jaar.</p><br>
+      <p class="leftAlign">Leerweg: BOL.</p><br>
+      <p class="leftAlign">Niveau: 4.</p><br>
+      <p class="leftAlign">Kwalificatiedossier: Software development.</p><br>
+      <p class="leftAlign">Maximum aantal: 60 plaatsen in totaal.</p><br>
+      <p class="leftAlign">
+        Studieprogramma: Studenten van de opleidingen Mediadeveloper en Gamedeveloper starten met een gezamenlijke periode. Hierna kies je ervoor om verder te gaan als mediadeveloper of gamedeveloper. Beide opleidingen duren vier jaar.Als mediadeveloper leer je in het begin van je opleiding niet alleen veel over technologie en programmeren, maar ook over de basis van digitale vormgeving. Je specialiseert je in programmeertalen zoals PHP en JavaScript en je leert gebruik te maken van HTML5 en CSS. Ook webservers en databases (bv. MySQL) hebben straks geen geheimen meer voor jou. Verder leer je werken volgens agile ontwikkelmethoden als scrum en pair programming, en maak je gebruik van een professionele ontwikkelomgeving inclusief versiebeheer. En je leert werken met opdrachtgevers, om je nog beter voor te bereiden op de beroepspraktijk.
+        <br><br>
+        Voor meer info ga naar: <a href="https://www.ma-web.nl/opleidingen/opleidingsoverzicht/mediadeveloper/" target="_blank" class="meerInfo">→ Pagina mediadeveloper</a>
+      </p><br>
+    </div>
+    <form class="contact" action="index.html" method="post">
+      <h2>Heb je een vraag? Neem contact met ons op!</h2>
+      <input type="text" name="" value="" placeholder="Voornaam*" class="textField" required>
+      <input type="text" name="" value="" placeholder="Email*" class="textField" required><br>
+      <textarea name="contactText" rows="3" cols="80" placeholder="Stel uw vraag hier.*" required></textarea><br>
+      <input type="submit" name="" value="Verstuur" class="stuur">
+    </form>
+
+    <footer>
+      <div class="links">
+        <h2 id="credit">Website door Justin Rodriguez Montoya</h2>
+        <h2>Externe links:</h2>
+        <a href="https://www.ma-web.nl/aanmelden/" target="_blank">→ Officiele Mediacollege site</a>
+        <br>
+        <a href="https://www.jromdesigns.com" target="_blank">→ Justin's portfolio website</a>
+      </div>
+    </footer>
+
+    <script src="scroll.js"></script>
+  </body>
+</html>

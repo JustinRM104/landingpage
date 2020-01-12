@@ -1,0 +1,48 @@
+DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="Justin Rodriguez Montoya">
+    <meta name="description" content="Opzoek naar een super leuke opleiding? Dan zit je op de goede plek! Schrijf je hier in voor de opleiding mediadeveloper.">
+    <meta name="keywords" content="mediadeveloper, opleiding, mediacollege, school, developer, html, css, javascript, debuggen, media">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Inschrijven</title>
+    <link rel="shortcut icon" href="img/fav.ico">
+  </head>
+  <body>
+    <input type="button" name="" value="Ga terug" id="terug">
+    <script>
+      let button3 = document.getElementById("terug")
+
+      function openWindow() {
+        window.open("index.html",'_self');
+      }
+
+      button3.addEventListener("click", openWindow);
+    </script>
+    <div class="inschrijfwrapper">
+      <h2>Inschrijven Mediadevelopment</h2>
+      <h3>Vul het onderstaande formulier in om u in te schrijven voor de opleiding Mediadevelopment.<br><br>
+        Voor meer informatie over de toelatingsprocedure kunt u naar deze pagina: <a href="https://www.ma-web.nl/aanmelden/aanmelden-mbo/" target="_blank" class="meerInfo">→ Aanmeldings pagina</a>
+      </h3>
+      <form class="inschrijfform" action="index.html" method="post">
+        <input type="text" name="voornaam" value="" class="textField1" placeholder="Voornaam*" required>
+        <input type="text" name="achternaam" value="" class="textField1" placeholder="Achternaam*" required>
+        <input type="date" name="leeftijd" value="Leeftijd" class="textField1" required>
+        <select class="geslacht" name="geslacht">
+          <option value="">Geslacht</option>
+          <option value="man">Man</option>
+          <option value="vrouw">Vrouw</option>
+        </select>
+        <input type="email" name="" value="" class="textField1" placeholder="Email*" required>
+        <input type="tel" name="" value="" class="textField1" placeholder="Tel*" required>
+        <textarea name="name" rows="8" cols="80" placeholder="Aanvullende informatie" class="extraInfo"></textarea>
+        <input type="submit" name="" value="Verstuur" class="stuur">
+      </form>
+    </div>
+  </body>
+</html>
